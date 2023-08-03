@@ -1,0 +1,79 @@
+{% extends 'hospital/homebase.html' %}
+{% load static %}
+
+
+{% block content %}
+
+
+<head>
+  <style media="screen">
+    .jumbotron {
+      margin-top: 0px;
+      margin-bottom: 0px;
+      background-image: url('{% static "images/bg.jpg" %}');
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+
+    .jumbotron h5
+     {
+      text-align: center;
+      color:whitesmoke;
+      forced-color-adjust: auto;
+      text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+    }
+    .jumbotron h3{
+      text-align: center;
+      color: brown;
+    }
+
+    .alert {
+      margin: 0px;
+      box-shadow: 0 0 10px 5px rgba(255, 255, 255, 0.8);
+    }
+
+
+
+    .glow {
+      font-size: 50px;
+      color:white;
+      text-align: center;
+      -webkit-animation: glow 1s ease-in-out infinite alternate;
+      -moz-animation: glow 1s ease-in-out infinite alternate;
+      animation: glow 1s ease-in-out infinite alternate;
+      
+    }
+
+    @-webkit-keyframes glow {
+      0% {
+        box-shadow: 0 0 10px 5px rgba(255, 255, 255, 0.8);
+      }
+      100% {
+        box-shadow: 0 0 20px 10px rgba(255, 255, 255, 0.8);
+      }
+    }
+  </style>
+</head>
+<br>
+<br>
+
+<div class="jumbotron" style="margin-bottom: 0px;margin-top: 0px;">
+  <br>
+  <h5 class="display-3 glow">Welcome To Our Hospital</h5>
+  <br><br><br><br><br>
+  <p>
+  <h3>Emergency ?</h3>
+
+  <p class="lead">
+    <a class="btn btn-primary btn-lg" href="/patientclick" role="button">Take Appointment</a>
+  </p>
+  <br><br>
+</div>
+
+<br><br><br><br>
+
+{% include "hospital/admin_doctor_patient_card.html" %}
+<br><br><br>
+
+
+{% endblock content %}

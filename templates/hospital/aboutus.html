@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Hospital Management System</title>
+  <style media="screen">
+    .jumbotron {
+      margin-top: 0px;
+      margin-bottom: 0px;
+    }
+
+    .jumbotron h1 {
+      text-align: center;
+    }
+
+    .alert {
+      margin: 0px;
+    }
+  </style>
+  <title>Hospital Management System</title>
+</head>
+
+<body>
+  {% include "hospital/navbar.html" %}
+  <br><br>
+  <center>
+    <h3 class='alert alert-success' style="margin-bottom:0px;">About Us !</h3>
+  </center>
+  <div class="jumbotron" style="margin-bottom: 0px;margin-top: 0px;">
+    <h1 class="display-4"></h1>
+    
+    <p class="lead">In today's rapidly evolving healthcare landscape, managing the complexities of a hospital can be a daunting task. From patient registrations to billing, appointment scheduling to inventory management, the seamless coordination of various processes is critical to ensure optimal patient care and operational efficiency. Our state-of-the-art Hospital Management System (HMS) is designed to address these challenges, revolutionizing the way healthcare organizations operate.Our Hospital Management System revolutionizes the way healthcare organizations operate, offering a comprehensive suite of features that streamline administrative tasks, enhance patient care, and improve overall operational efficiency. By leveraging technology to automate and integrate various processes, hospitals can optimize their resources, deliver exceptional patient experiences, and stay ahead in the dynamic healthcare industry.</p>
+    <hr class="my-4">
+    <p>Explore our Website.
+
+    </p>
+    <p class="lead">
+      <a class="btn btn-primary btn-lg" href="/" role="button">HOME</a>
+    </p>
+  </div>
+  {% include "hospital/footer.html" %}
+</body>
+
+</html>
